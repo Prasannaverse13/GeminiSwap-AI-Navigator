@@ -2,7 +2,6 @@
 
 GeminiSwap AI Navigator is an intelligent DeFi contract assistant that helps users navigate cryptocurrency swaps on the Rootstock blockchain testnet. The application leverages Google's Gemini AI API to provide intelligent insights, risk assessments, and recommendations for optimizing decentralized finance transactions.
 
-![GeminiSwap Screenshot](https://assets.coingecko.com/coins/images/24437/standard/rbtc-coingecko.png)
 
 ## Table of Contents
 
@@ -289,13 +288,3 @@ The development workflow involved:
 - Advanced AI models for more sophisticated trading strategies
 - Price charts and trend analysis with historical data
 - Mobile application version
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Rootstock team for their testnet infrastructure
-- Google for the Gemini AI API
-- The DeFi community for inspiration and support
