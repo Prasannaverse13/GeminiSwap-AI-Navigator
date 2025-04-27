@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 11%;
+  --foreground: 0 0% 98%;
+  --muted: 223 47% 15%;
+  --muted-foreground: 215 20% 65%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 0 0% 98%;
+  --card: 222 47% 11%;
+  --card-foreground: 0 0% 98%;
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --primary: 250 84% 54%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 222 47% 15%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 222 47% 15%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 216 34% 17%;
+  --radius: 0.5rem;
+
+  --sidebar-background: 222 47% 11%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-border: 216 34% 17%;
+  --sidebar-primary: 250 84% 54%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 222 47% 15%;
+  --sidebar-accent-foreground: 0 0% 98%;
+  --sidebar-ring: 216 34% 17%;
+
+  --success: 142 76% 36%;
+  --success-foreground: 210 40% 98%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 216 34% 17%;
+  --error: 0 84% 60%;
+  --error-foreground: 210 40% 98%;
+
+  --chart-1: 250 84% 54%;
+  --chart-2: 217 91% 60%;
+  --chart-3: 142 76% 36%;
+  --chart-4: 38 92% 50%;
+  --chart-5: 0 84% 60%;
+}
+
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 0 0% 98%;
+  --muted: 223 47% 15%;
+  --muted-foreground: 215 20% 65%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 0 0% 98%;
+  --card: 222 47% 15%;
+  --card-foreground: 0 0% 98%;
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --primary: 250 84% 54%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 222 47% 15%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 222 47% 15%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 216 34% 17%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.loading-shimmer {
+  background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--secondary)) 50%, hsl(var(--muted)) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--secondary));
+  border-radius: 20px;
+}
